@@ -1,0 +1,19 @@
+{
+  "name": "cuento-interactivo",
+  "version": "0.0.1",
+  "description": "cuento web interactivo hecho para ocasion especial",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sendrarisk/cuento-interactivo.git"
+  },
+  "author": "cristian villafañe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sendrarisk/cuento-interactivo/issues"
+  },
+  "homepage": "https://github.com/sendrarisk/cuento-interactivo#readme"
+}
