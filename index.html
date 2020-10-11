@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/index.css"/>
+    <link rel="stylesheet" href="./src/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Cuento</title>
 </head>
+
 <body>
+    <div id="comenzar_contenedor">
+        <button id="comenzar_boton">Comenzar</button>
+    </div>
+    <main>
+        <img id="imagen" src="https://t2.uc.ltmcdn.com/images/7/8/2/como_cuidar_un_conejo_domestico_7287_orig.jpg"
+            alt="no cargó" />
+        <p id="texto">
+            ...
+        </p>
+        <div class="siguiente_contenedor">
+            <button id="siguiente_boton" disabled>siguiente -></button>
+        </div>
+        <div id="opciones_contenedor"></div>
+        <div id="respuesta_contenedor">
+            <p id="respuesta"></p>
+        </div>
+    </main>
+    <script src="./src/caminos/c1.js"></script>
+    <script src="./src/caminos/c2.js"></script>
+    <script src="./src/caminos/c3.js"></script>
+    <script src="./src/caminos/c4.js"></script>
+    <script src="./src/utils.js"></script>
     <script src="./src/index.js"></script>
 </body>
+
 </html>
