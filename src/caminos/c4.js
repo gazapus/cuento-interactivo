@@ -3,7 +3,7 @@ const c4 = {
     content: [
         {
             text: 'Fin de la historia',
-            img: './src/images/con5.jpg'
+            img: './src/images/2.jpg'
         }
     ],
     options: [

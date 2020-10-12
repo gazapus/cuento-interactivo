@@ -94,7 +94,7 @@ main {
     background: rgba(112, 5, 5, 0.993);
     border-width: 0;
     border-radius: 10pt;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
     color: #eee1e1;
     font-family: 'Varela Round', sans-serif;
     font-size: 1em;
@@ -107,13 +107,22 @@ main {
     cursor: pointer;
 }
 
+.siguiente_boton_disabled {
+    background: rgba(107, 38, 38, 0.993) !important;
+    color: #c7c0c0 !important;
+}
+
+.siguiente_boton_disabled:hover{
+    cursor: progress !important;
+}
+
 #opciones_contenedor {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 4vh;
+    margin-top: 5vh;
 }
 
 .boton_opcion {
@@ -121,12 +130,12 @@ main {
     background: rgba(38, 0, 143, 0.993);
     border-width: 0;
     border-radius: 8pt;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
     color: #eee1e1;
     font-family: 'Varela Round', sans-serif;
     font-size: 1em;
     outline: none;
-    margin: 4pt;
+    margin: 0pt 4pt 0 4pt;
 }
 
 .boton_opcion:hover {
@@ -198,8 +207,14 @@ main {
         align-items: center;
         margin-top: 0vh;
     }
+    .boton_opcion {
+        margin-bottom: 4pt;
+    }
 }
 
 .animate__animated.animate__fadeInLeft {
+    --animate-duration: 3s;
+}
+.animate__animated.animate__bounceIn {
     --animate-duration: 3s;
 }

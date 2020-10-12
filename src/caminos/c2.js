@@ -3,15 +3,15 @@ const c2 = {
     content: [
         {
             text: 'El conejito quería ser presidente pero necesitaba un partido donde afiliarse',
-            img: './src/images/con3.jpg'
+            img: './src/images/1.jpg'
         },
         {
             text: 'Así que se le ocurrió meterse al partido libera conservador',
-            img: './src/images/con3.jpg'
+            img: './src/images/1.jpg'
         },
         {
             text: 'Y se candidateó como alcalde de Villa Gazapa',
-            img: './src/images/con2.jpg'
+            img: './src/images/2.jpg'
         }
     ],
     options: [

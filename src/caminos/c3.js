@@ -3,19 +3,19 @@ const c3 = {
     content: [
         {
             text: 'El conen prometió frutas para todos, ese fue su slogan',
-            img: './src/images/con4.jpg'
+            img: './src/images/2.jpg'
         },
         {
             text: 'Y ganó las elecciones por el 100% de los votos',
-            img: './src/images/con4.jpg'
+            img: './src/images/1.jpg'
         },
         {
             text: 'Pudo hacer feliz a todos!',
-            img: './src/images/con3.jpg'
+            img: './src/images/2.jpg'
         },
         {
             text: 'Y así es como termina esta historia',
-            img: './src/images/con3.jpg'
+            img: './src/images/1.jpg'
         }
     ],
     options: [

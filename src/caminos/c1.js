@@ -15,11 +15,11 @@ const c1 = {
         },
         {
             text: 'Que saltaba muy feliz',
-            img: './src/images/2.jpg'
+            img: './src/images/1.jpg'
         },
         {
             text: 'Y comía perdiz...',
-            img: './src/images/1.jpg'
+            img: './src/images/2.jpg'
         }
     ],
     options: [
