@@ -1,10 +1,13 @@
-body{
-    background-color: rgb(25, 24, 26);
+body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #020014;
+    background-image: url("https://www.transparenttextures.com/patterns/buried.png");
 }
 
 #comenzar_contenedor {
@@ -12,46 +15,96 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     transition-duration: 0.9s;
-    background-color: rgb(43, 5, 5);
+    background-color: #0f0004;
+    background-image: url("https://www.transparenttextures.com/patterns/soft-kill.png");
 }
 
 #comenzar_boton {
-    padding: 10pt;
+    padding: 12pt;
+    background-color: #9B001C;
+    border-width: 0;
+    border-radius: 10pt;
+    text-transform: uppercase;
+    transition-duration: 0.3s;
+    color: #c1e2b3;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5em;
+    vertical-align: middle;
+    outline: none;
+}
+
+#comenzar_boton:hover {
+    background-color: #b40525;
+    color: #d5ebcc;
+    cursor: pointer;
 }
 
 main {
-    background-color: maroon;
-    margin-top: 1%;
+    background-color: #3b2000;
+    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
     width: 60%;
+    height: 94vh;
     border-radius: 20pt;
-    padding: 4%;
+    padding: 2vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     opacity: 0;
     display: none;
+    box-shadow: 0 0px 15px rgb(36, 0, 0);
 }
 
 #imagen {
-    width: 40%;
+    width: 50%;
     border-width: 2pt;
     border-style: solid;
     border-radius: 8pt;
 }
 
 #texto {
+    width: 95%;
     text-align: justify;
     text-indent: 1em;
+    height: 38%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 15pt;
+    box-shadow: 0 0px 5px rgba(22, 22, 22, 0.411);
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    line-height: 1.6em;
+    word-spacing: 0.2em;
+    border-radius: 5pt;
 }
 
-.siguiente_contenedor {
+#siguiente_contenedor {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 4%;
+    justify-content: center;
+}
+
+#siguiente_boton {
+    margin-top: 5vh;
+    padding: 8pt 14pt 8pt 14pt;
+    background: rgba(112, 5, 5, 0.993);
+    border-width: 0;
+    border-radius: 10pt;
+    transition-duration: 0.3s;
+    color: #eee1e1;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1em;
+    outline: none;
+}
+
+#siguiente_boton:hover {
+    background: rgba(134, 5, 5, 0.993);
+    color: #dde9d9;
+    cursor: pointer;
 }
 
 #opciones_contenedor {
@@ -59,5 +112,94 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
+    margin-top: 4vh;
+}
+
+.boton_opcion {
+    padding: 4pt 10pt 4pt 10pt;
+    background: rgba(38, 0, 143, 0.993);
+    border-width: 0;
+    border-radius: 8pt;
+    transition-duration: 0.3s;
+    color: #eee1e1;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1em;
+    outline: none;
+    margin: 4pt;
+}
+
+.boton_opcion:hover {
+    background: rgba(54, 0, 202, 0.993);
+    cursor: pointer;
+}
+
+.disabled {
+    background: rgba(104, 104, 104, 0.568);
+}
+
+.disabled:hover {
+    cursor: not-allowed;
+    background: rgba(128, 128, 128, 0.568);
+}
+
+#respuesta {
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    word-spacing: 0.2em;
+    color: #4e0000;
+}
+
+::-webkit-scrollbar {
+    width: 9pt;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(187, 132, 132, 0.295);
+    border-radius: 10pt;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(112, 5, 5, 0.616);
+    border-radius: 10pt;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(112, 5, 5, 0.76);
+}
+
+@media (max-width: 1024px) {
+    main {
+        width: 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        width: 90%;
+    }
+    #imagen {
+        width: 95%;
+    }
+    #texto {
+        height: 40%;
+        width: 95%;
+    }
+    #siguiente_boton {
+        margin-top: 6vh;
+        padding: 7pt 8pt 7pt 8pt;
+        font-size: 0.9em;
+    }
+    #opciones_contenedor {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0vh;
+    }
+}
+
+.animate__animated.animate__fadeInLeft {
+    --animate-duration: 3s;
 }

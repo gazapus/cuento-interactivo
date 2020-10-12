@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&family=Varela+Round&display=swap" rel="stylesheet">
     <title>Cuento</title>
 </head>
 
 <body>
     <div id="comenzar_contenedor">
-        <button id="comenzar_boton">Comenzar</button>
+        <button id="comenzar_boton" class="animate__animated">Comenzar</button>
     </div>
     <main>
-        <img id="imagen" src="https://t2.uc.ltmcdn.com/images/7/8/2/como_cuidar_un_conejo_domestico_7287_orig.jpg"
-            alt="no cargó" />
-        <p id="texto">
-            ...
-        </p>
-        <div class="siguiente_contenedor">
-            <button id="siguiente_boton" disabled>siguiente -></button>
+        <img class="animate__animated animate__fadeIn" id="imagen" src="./src/images/black.png" alt="no cargó" />
+        <p id="texto"></p>
+        <div id="siguiente_contenedor">
+            <button id="siguiente_boton" class="animate__animated animate__fadeInLeft">SIGUIENTE</button>
         </div>
         <div id="opciones_contenedor"></div>
         <div id="respuesta_contenedor">

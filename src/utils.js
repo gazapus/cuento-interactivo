@@ -14,6 +14,16 @@ function aparecer(elemento, tiempo, callback, opacidadActual = 0) {
         elemento.style.opacity = opacidadActual;
         setTimeout(() => aparecer(elemento, tiempo, callback, opacidadActual), 50)
     } else {
-        setTimeout(callback, 1000)
+        setTimeout(callback, 1000);
     }
+}
+
+function reaparecer(elemento, tiempo, callback, brillo = 0) {
+   if(brillo < 1) {
+       brillo = brillo + 100 / tiempo;
+       elemento.style.webkitFilter  = `brightness(${brillo})`;
+       setTimeout(() => reaparecer(elemento, tiempo, callback, brillo), 100);
+   } else {
+        setTimeout(callback, 1000);
+   }
 }
