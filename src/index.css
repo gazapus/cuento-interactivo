@@ -58,7 +58,6 @@ main {
 }
 
 #imagen {
-    width: 50%;
     border-width: 2pt;
     border-style: solid;
     border-radius: 8pt;
@@ -79,6 +78,8 @@ main {
     line-height: 1.6em;
     word-spacing: 0.2em;
     border-radius: 5pt;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.02);
 }
 
 #siguiente_contenedor {
@@ -89,7 +90,6 @@ main {
 }
 
 #siguiente_boton {
-    margin-top: 5vh;
     padding: 8pt 14pt 8pt 14pt;
     background: rgba(112, 5, 5, 0.993);
     border-width: 0;
@@ -107,6 +107,11 @@ main {
     cursor: pointer;
 }
 
+.siguiente_boton:active {
+    border-radius: 10pt !important;
+    background-color: rgba(233, 250, 0, 0.541) !important;
+}
+
 .siguiente_boton_disabled {
     background: rgba(107, 38, 38, 0.993) !important;
     color: #c7c0c0 !important;
@@ -122,7 +127,6 @@ main {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 5vh;
 }
 
 .boton_opcion {
@@ -141,6 +145,11 @@ main {
 .boton_opcion:hover {
     background: rgba(54, 0, 202, 0.993);
     cursor: pointer;
+}
+
+.boton_opcion:active {
+    border-radius: 8pt;
+    background-color: rgba(233, 250, 0, 0.363);
 }
 
 .disabled {
@@ -180,8 +189,23 @@ main {
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(112, 5, 5, 0.76);
 }
+/*94*/
+@media (min-width: 800px) {
+    #imagen{
+        height: 35vh;
+    }
+    #texto{
+        height: 35vh;
+    }
+    #siguiente_boton {
+       margin: 5vh 0 5vh 0;
+    }
+    .boton_opcion {
+       margin-top: 3vh;
+    }
+}
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
     main {
         width: 70%;
     }
@@ -193,11 +217,13 @@ main {
     }
     #imagen {
         width: 95%;
+        height: 35vh;
+
     }
     #texto {
-        height: 40%;
+        height: 35vh;
         width: 95%;
-        font-size: 1.1em;
+        font-size: 1em;
     }
     #siguiente_boton {
         margin-top: 6vh;
@@ -207,7 +233,6 @@ main {
     #opciones_contenedor {
         flex-direction: column;
         align-items: center;
-        margin-top: 0vh;
     }
     .boton_opcion {
         margin-bottom: 4pt;

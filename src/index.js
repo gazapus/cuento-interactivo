@@ -120,8 +120,6 @@ function finalizar() {
         imagen.src = "./src/images/black.png";
         texto.innerText = "";
         opcionesContenedor.innerHTML = "";
-        aparecer(contenedorComenzar, 1000, () => {
-            console.log("fin")
-        })
+        aparecer(contenedorComenzar, 1000);
     });
 }
