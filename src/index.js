@@ -64,6 +64,7 @@ function mostrar() {
         reaparecer(imagen, 1000);
     }
     texto.innerText = caminoActual.content[posicionActual].text;
+    texto.scrollTop = 0;
     aparecer(texto, 1000);
     if (!haySiguiente()) {
         botonSiguiente.style.display = 'none';
@@ -98,7 +99,7 @@ function seleccionarOpcion(e) {
             opcionesContenedor.innerHTML = "";
             respuestaContenedor.innerHTML = "";
             cargarCamino(respuesta.next, respuesta.position)
-        }, 3000)
+        }, 4000)
     } else {
         finalizar();
     }

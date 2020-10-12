@@ -224,6 +224,7 @@ main {
         height: 35vh;
         width: 95%;
         font-size: 1em;
+        padding: 5pt;
     }
     #siguiente_boton {
         margin-top: 6vh;
