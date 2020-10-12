@@ -155,11 +155,12 @@ main {
 #respuesta {
     text-align: center;
     font-family: 'Sansita Swashed', cursive;
-    font-size: 1.2em;
+    font-size: 1.3em;
     letter-spacing: 0.1em;
     line-height: 1.5em;
     word-spacing: 0.2em;
     color: #4e0000;
+    text-shadow: 0 0 3px rgba(158, 158, 158, 0.726)
 }
 
 ::-webkit-scrollbar {
@@ -196,6 +197,7 @@ main {
     #texto {
         height: 40%;
         width: 95%;
+        font-size: 1.1em;
     }
     #siguiente_boton {
         margin-top: 6vh;
