@@ -26,13 +26,13 @@ const monte_platano2 = {
         {
             text: 'Seguir buscando',
             answer: 'Se sacudieron las patas y continuaron',
-            next: 'ultimo',
+            next: 'monte_platano3',
             position: 0
         },
         {
             text: 'Volver a casa',
             answer: 'Se dieron un fuerte abrazo listos para descender',
-            next: 'ultimo',
+            next: 'monte_platano_vuelta',
             position: 0
         }
     ]

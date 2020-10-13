@@ -8,7 +8,7 @@ let imagen = document.getElementById("imagen");
 let texto = document.getElementById("texto");
 
 const CAMINOS = [inicio, explicacion, dormir_mas, desayuno, monte_platano, bosque_colibri, lago_gazaposo, 
-    alucinacion_cactus, picnic_monte, gazapos_adultos, monte_platano2, c4]
+    alucinacion_cactus, picnic_monte, gazapos_adultos, monte_platano2, monte_platano3, monte_platano_vuelta, c4]
 
 let caminoActual = null;
 let posicionActual = null;
