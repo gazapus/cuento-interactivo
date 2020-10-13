@@ -1,4 +1,4 @@
-const c1 = {
+const inicio = {
     name: 'inicio',
     content: [
         {
@@ -21,21 +21,21 @@ const c1 = {
     options: [
         {
             text: '¡Excelente idea, vamos!',
-            answer: '"Daleee"',
-            next: 'segundo',
+            answer: '"¡Dale!"',
+            next: 'explicacion_de_caminos',
             position: 0
         },
         {
             text: 'Voy a dormir un ratito más',
-            answer: '"Muy bien Princesa"',
-            next: 'ultimo',
+            answer: '"Está bien, dormir es saludable"',
+            next: 'dormir_mas',
             position: 0
         },
         {
             text: 'Primero vamos a desayunar',
-            answer: '"Siii"',
-            next: 'inicio',
-            position: 1
+            answer: '"Excelente idea"',
+            next: 'desayuno',
+            position: 0
         }
     ]
 }

@@ -45,7 +45,7 @@ body {
 main {
     background-color: #3b2000;
     background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
-    width: 60%;
+    width: 55%;
     height: 94vh;
     border-radius: 20pt;
     padding: 2vh;
@@ -189,7 +189,19 @@ main {
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(112, 5, 5, 0.76);
 }
-/*94*/
+
+@media (max-width: 1336px) {
+    main {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        width: 70%;
+    }
+}
+
 @media (min-width: 800px) {
     #imagen{
         height: 35vh;
@@ -205,11 +217,6 @@ main {
     }
 }
 
-@media (min-width: 1024px) {
-    main {
-        width: 70%;
-    }
-}
 
 @media (max-width: 800px) {
     main {
@@ -237,6 +244,9 @@ main {
     }
     .boton_opcion {
         margin-bottom: 4pt;
+    }
+    #respuesta {
+        font-size: 1.1em;
     }
 }
 
