@@ -18,19 +18,19 @@ const lago_gazaposo = {
         {
             text: 'Estoy de acuerdo',
             answer: '"¡A por ella!"',
-            next: 'ultimo',
+            next: 'lago_gazaposo2',
             position: 0
         },
         {
             text: 'Comamos primero',
             answer: '"¡Me encanta!¡Me encanta!"',
-            next: 'ultimo',
+            next: 'picnic_lago',
             position: 0
         },
         {
             text: '- Empujar al Principe al agua - ',
             answer: 'bruuumm',
-            next: 'ultimo',
+            next: 'juego_lago',
             position: 0
         }
     ]
