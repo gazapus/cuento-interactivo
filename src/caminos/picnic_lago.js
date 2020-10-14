@@ -20,6 +20,12 @@ const picnic_lago = {
             answer: '"¡Vamos!"',
             next: 'lago_gazaposo2',
             position: 0
+        },
+        {
+            text: 'Ahora me da mucho sueño',
+            answer: '"Me parece bien"',
+            next: 'lago_sueño',
+            position: 0
         }
     ]
 }

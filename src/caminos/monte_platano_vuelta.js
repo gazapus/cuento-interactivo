@@ -14,10 +14,9 @@ const monte_platano_vuelta= {
             img: './src/images/2.jpg'
         },
         {
-            text: 'Tenían tantas paltas doradas como quisieran. Jugaban con ellas, las comían y apreciaban. Recogieron lo máximo que pudieron y se dirigieron al Palacio a repartir entre todos.\nEntre halagos por parte de los conejos, platos milenarios de palta dorada de los cocineros e historias sobre aquellos pocos que habían logrado hacerlas crecer transcurrió el resto del día para los Principes.',
+            text: 'Tenían tantas paltas doradas como quisieran. Jugaban con ellas, las comían y apreciaban. Recogieron lo máximo que pudieron y se dirigieron al Palacio a repartir entre todos.\nEntre halagos por parte de los conejos, platos milenarios de palta dorada de los cocineros e historias sobre aquellos pocos que habían logrado hacerlas crecer transcurrió el resto del día para los Principes, quienes muy contentos quedaron.',
             img: './src/images/2.jpg'
         },
-   
     ],
     options: [
         {

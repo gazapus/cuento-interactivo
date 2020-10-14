@@ -13,7 +13,7 @@ const explicacion = {
             text: `Concluyeron que había tres lugares posibles donde encontrar la palta dorada:
              - La Montaña del Platano, rica de las más exoticas frutas y verduras, un espacio díficil para los conejitos que tratan de hacer dieta.
              - El Bosque Colibrí, cubierto de misterios y magía pero demasiado espeso y profundo, no suele ser recomendable para gazapos tan pequeños por si se pierden.
-             - Lago Gazaposo, un lugar donde los conejitos suelen ir a refrescarse y donde se han encontrado muchos tesoros
+             - Lago Gazaposo, un extenso lago donde los conejitos suelen ir a refrescarse, comer y donde se han encontrado muchos tesoros.
              ¿A donde ir?'
             `,
              img: './src/images/2.jpg'

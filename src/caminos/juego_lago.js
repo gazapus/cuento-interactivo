@@ -23,7 +23,7 @@ const juego_lago = {
         },
         {
             text: 'Comamos primero',
-            answer: '"¡Me encanta!¡Me encanta!"',
+            answer: '"¡Me encanta!"',
             next: 'ultimo',
             position: 0
         },

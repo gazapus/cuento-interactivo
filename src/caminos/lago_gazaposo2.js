@@ -22,13 +22,13 @@ const lago_gazaposo2 = {
         {
             text: 'Regresemos a casa',
             answer: '"Chi"',
-            next: 'ultimo',
+            next: 'lago_vuelta',
             position: 0
         },
         {
             text: 'Juguemos bajo el arbol',
             answer: '"Wiii"',
-            next: 'ultimo',
+            next: 'juego_lago_arbol',
             position: 0
         }
     ]
