@@ -28,7 +28,7 @@ const lago_gazaposo = {
             position: 0
         },
         {
-            text: '- Empujar al Principe al agua - ',
+            text: 'Empujar al Principe al agua',
             answer: 'bruuumm',
             next: 'lago_juego',
             position: 0

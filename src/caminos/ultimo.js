@@ -6,11 +6,11 @@ const ultimo = {
             img: './src/images/1.jpg'
         },
         {
-            text: 'A su vez los gazapos, estuvieron muy satisfechos con la expieriencia sabiendo que no sólo consiguieron la palta, sino también tomaron conciencia de que el amor se cultiva, se cosecha y se desayuna, el amor es el que hace brillar los días, las vidas y las paltas.',
+            text: 'A su vez los gazapos, estuvieron muy satisfechos con la expieriencia sabiendo que no sólo consiguieron la palta, sino también tomaron conciencia de que el amor se cultiva, se cosecha y se desayuna, el amor es el que hace brillar los días, las vidas y las paltas, y que no importa el camino cuando es firme el objetivo porque la suerte puede ser asombrosa así como la palta de sabrosa, donde distintos puntos de partida convergen en una sola cosa que aunque el resultado puede ser distinto la felicidad siempre es gazaposa.',
             img: './src/images/1.jpg'
         },
         {
-            text: '"¡Feliz cumplemes N° 33 Princesa Cascabel!',
+            text: '"¡Feliz cumplemes N° 33 Princesa Cascabel le desea el Principe Gazapo y todo el elenco de Convergencia Gazaposa!',
             img: './src/images/1.jpg'
         }
     ],

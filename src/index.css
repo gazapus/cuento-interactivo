@@ -71,7 +71,6 @@ main {
     overflow-y: auto;
     box-sizing: border-box;
     padding: 15pt;
-    box-shadow: 0 0px 5px rgba(22, 22, 22, 0.411);
     font-family: 'Sansita Swashed', cursive;
     font-size: 1.2em;
     letter-spacing: 0.1em;
@@ -117,7 +116,7 @@ main {
     color: #c7c0c0 !important;
 }
 
-.siguiente_boton_disabled:hover{
+.siguiente_boton_disabled:hover {
     cursor: progress !important;
 }
 
@@ -203,20 +202,19 @@ main {
 }
 
 @media (min-width: 800px) {
-    #imagen{
+    #imagen {
         height: 35vh;
     }
-    #texto{
+    #texto {
         height: 35vh;
     }
     #siguiente_boton {
-       margin: 5vh 0 5vh 0;
+        margin: 5vh 0 5vh 0;
     }
     .boton_opcion {
-       margin-top: 3vh;
+        margin-top: 3vh;
     }
 }
-
 
 @media (max-width: 800px) {
     main {
@@ -225,13 +223,13 @@ main {
     #imagen {
         width: 95%;
         height: 35vh;
-
     }
     #texto {
         height: 35vh;
         width: 95%;
         font-size: 1em;
         padding: 5pt;
+        box-shadow: 0 0px 5px rgba(22, 22, 22, 0.411);
     }
     #siguiente_boton {
         margin-top: 6vh;
@@ -253,6 +251,7 @@ main {
 .animate__animated.animate__fadeInLeft {
     --animate-duration: 3s;
 }
+
 .animate__animated.animate__bounceIn {
     --animate-duration: 3s;
 }
