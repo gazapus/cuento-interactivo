@@ -23,7 +23,7 @@ const bosque_colibri = {
         },
         {
             text: 'Comer honguitos',
-            answer: '"Justo tenía hambre"',
+            answer: '"¡Sí, probemoslo!"',
             next: 'ultimo',
             position: 0
         },
