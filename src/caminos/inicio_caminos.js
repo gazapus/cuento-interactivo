@@ -1,5 +1,5 @@
-const explicacion = {
-    name: 'explicacion_de_caminos',
+const inicio_caminos = {
+    name: 'inicio_caminos',
     content: [
         {
             text: 'El principe y la princesa se encaminaron a la plaza real, allí hicieron una pausa para jugar y seguir mariposas. Una vez cansados se recostaron cabeza a cabeza mirando las nubes y encontrando formas graciosas en ellas. El sol brillaba sobre ellos dandole su cálida bendición',

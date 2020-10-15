@@ -22,19 +22,19 @@ const monte_platano = {
         {
             text: 'Probemos estos cactus',
             answer: '"Veamos qué tal son"',
-            next: 'alucinacion_cactus',
+            next: 'monte_alucinacion',
             position: 0
         },
         {
             text: 'Hagamos un picnic',
             answer: '"Es usted un amor"',
-            next: 'picnic_monte',
+            next: 'monte_picnic',
             position: 0
         },
         {
             text: 'Hagamos cosas de gazapos adultos',
             answer: '"Usted tiene el brillo y el fuego del sol ❤"',
-            next: 'gazapos_adultos',
+            next: 'monte_gazapos_adultos',
             position: 0
         }
     ]

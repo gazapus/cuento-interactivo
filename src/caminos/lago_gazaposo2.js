@@ -28,7 +28,7 @@ const lago_gazaposo2 = {
         {
             text: 'Juguemos bajo el arbol',
             answer: '"Wiii"',
-            next: 'juego_lago_arbol',
+            next: 'lago_juego_arbol',
             position: 0
         }
     ]

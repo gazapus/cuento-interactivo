@@ -24,13 +24,13 @@ const lago_gazaposo = {
         {
             text: 'Comamos primero',
             answer: '"¡Me encanta!¡Me encanta!"',
-            next: 'picnic_lago',
+            next: 'lago_picnic',
             position: 0
         },
         {
             text: '- Empujar al Principe al agua - ',
             answer: 'bruuumm',
-            next: 'juego_lago',
+            next: 'lago_juego',
             position: 0
         }
     ]

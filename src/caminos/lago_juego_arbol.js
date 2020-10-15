@@ -1,5 +1,5 @@
-const juego_lago_arbol = {
-    name: 'juego_lago_arbol',
+const lago_juego_arbol = {
+    name: 'lago_juego_arbol',
     content: [
         {
             text: 'Sin mediar palabras los conejitos comenzaron a brincar, saltando de juego en juego, así como de rama en rama. A veces el piso era lava y en otras no debían pisar las rayas, y así pasaron las horas y hasta jugaron al tres en raya',

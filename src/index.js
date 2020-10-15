@@ -7,11 +7,13 @@ let respuestaContenedor = document.getElementById("respuesta_contenedor");
 let imagen = document.getElementById("imagen");
 let texto = document.getElementById("texto");
 
-const CAMINOS = [inicio, explicacion, dormir_mas, desayuno, monte_platano, bosque_colibri, lago_gazaposo, 
-    alucinacion_cactus, picnic_monte, gazapos_adultos, monte_platano2, monte_platano3, monte_platano_vuelta,
-    lago_gazaposo2, juego_lago, picnic_lago, lago_sueño, juego_lago_arbol, bosque_hongos, bosque_exploracion_correcta, 
-    bosque_expliracion_incorrecta, bosque_correr, bosque_despacito, ultimo]
-
+const CAMINOS = [
+    inicio, inicio_caminos, inicio_desayuno, inicio_sueño,
+    monte_platano, monte_alucinacion, monte_picnic, monte_gazapos_adultos, monte_platano2, monte_platano3, monte_platano_vuelta,
+    lago_gazaposo, lago_gazaposo2, lago_juego_arbol, lago_picnic, lago_juego, lago_sueño, lago_vuelta,
+    bosque_colibri, bosque_exploracion, bosque_sabio, bosque_hongos, bosque_exploracion_correcta, bosque_exploracion_incorrecta, bosque_despacito, bosque_correr,
+    ultimo
+]
 let caminoActual = null;
 let posicionActual = null;
 

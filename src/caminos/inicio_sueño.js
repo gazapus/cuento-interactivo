@@ -1,5 +1,5 @@
-const dormir_mas = {
-    name: 'dormir_mas',
+const inicio_sueño = {
+    name: 'inicio_sueño',
     content: [
         {
             text: 'El Principe de un salto volvió a jugar en los alrededores mientras la Princesa se recostaba y volvía a entrar al mundo de los sueños',
@@ -22,7 +22,7 @@ const dormir_mas = {
         {
             text: 'Despertar',
             answer: '"¡Ya despertaste Princesa, ahora sí vamos!"',
-            next: 'explicacion_de_caminos',
+            next: 'inicio_caminos',
             position: 0
         }
     ]

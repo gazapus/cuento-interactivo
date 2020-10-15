@@ -1,5 +1,5 @@
-const picnic_lago = {
-    name: 'picnic_lago',
+const lago_picnic = {
+    name: 'lago_picnic',
     content: [
         {
             text: 'Con una manta sobre el cesped, un termito de agua fresca, vasos y platos se dispusieron a tomarse un almuerzo a gusto con la naturaleza',

@@ -22,19 +22,19 @@ const inicio = {
         {
             text: '¡Excelente idea, vamos!',
             answer: '"¡Dale!"',
-            next: 'explicacion_de_caminos',
+            next: 'inicio_caminos',
             position: 0
         },
         {
             text: 'Voy a dormir un ratito más',
             answer: '"Está bien, dormir es saludable"',
-            next: 'dormir_mas',
+            next: 'inicio_sueño',
             position: 0
         },
         {
             text: 'Primero vamos a desayunar',
             answer: '"Excelente idea"',
-            next: 'desayuno',
+            next: 'inicio_desayuno',
             position: 0
         }
     ]

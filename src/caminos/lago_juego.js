@@ -1,5 +1,5 @@
-const juego_lago = {
-    name: 'juego_lago',
+const lago_juego = {
+    name: 'lago_juego',
     content: [
         {
             text: 'Picarona y de sorpresa la Princesa se aventó hacía el Principe y con sus manitas lo empujó hacía el lago. El Príncipe, como era buen nadador, arrimó su cabecita sobre el agua y rieron juntos del hecho sucedido',

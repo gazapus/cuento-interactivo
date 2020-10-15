@@ -1,5 +1,5 @@
-const alucinacion_cactus = {
-    name: 'alucinacion_cactus',
+const monte_alucinacion = {
+    name: 'monte_alucinacion',
     content: [
         {
             text: 'Tras comerlos comenzaron a sentirse más livianos hasta empezar a volar. Juntos volaban, chillaban y reían, veían raro. Se divertían mucho',

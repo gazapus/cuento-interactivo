@@ -1,5 +1,5 @@
-const desayuno = {
-    name: 'desayuno',
+const inicio_desayuno = {
+    name: 'inicio_desayuno',
     content: [
         {
             text: 'El Principe y la Princesa fueron al salón comedor del Palacio, ya era algo tarde así que estaban solos en la mesa por lo se pusieron a comer y jugar sobre ella con risas contagiosas',
@@ -26,19 +26,19 @@ const desayuno = {
         {
             text: 'Escuchar el menu de vuelta',
             answer: 'El mozo vuelve a recitar el menu',
-            next: 'desayuno',
+            next: 'inicio_desayuno',
             position: 2
         },
         {
             text: 'Alfalfa de los huertos de Llama',
             answer: 'Los principes comieron hasta quedar bien gorditos',
-            next: 'explicacion_de_caminos',
+            next: 'inicio_caminos',
             position: 0
         },
         {
             text: 'Zanahorias al vapor',
             answer: 'Los principes comieron hasta quedar bien gorditos',
-            next: 'explicacion_de_caminos',
+            next: 'inicio_caminos',
             position: 0
         }
     ]

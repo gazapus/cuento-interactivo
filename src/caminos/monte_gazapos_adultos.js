@@ -1,5 +1,5 @@
-const gazapos_adultos = {
-    name: 'gazapos_adultos',
+const monte_gazapos_adultos = {
+    name: 'monte_gazapos_adultos',
     content: [
         {
             text: 'Los Principes se acercaron hasta estar apretados el uno contra el otro, luego el principe ******* ** **************** **  ********** ****** ******** ***** **** y después la Princesa ****** * ** * ****  ******  **** *** ** ******** **** * ****** ******, aunque por su joven edad aun no podían fabricar gazapitos pero igual ****** ****** ******* ******* *******  *** *** ** **** ** **** patas arriba',
