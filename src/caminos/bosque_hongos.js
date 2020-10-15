@@ -24,13 +24,13 @@ const bosque_hongos = {
         {
             text: 'Exploremos más',
             answer: '"Así será"',
-            next: 'ultimo',
+            next: 'bosque_exploracion',
             position: 0
         },
         {
             text: 'Vamos a buscar al Monte Platano',
             answer: 'Se levantaron y emprendieron el viaje el monte',
-            next: 'ultimo',
+            next: 'monte_platano',
             position: 0
         }
     ]
