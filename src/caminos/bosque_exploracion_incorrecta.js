@@ -26,13 +26,13 @@ const bosque_exploracion_incorrecta = {
         {
             text: 'Correr hacía ellas',
             answer: 'La Princesa, seguida por el Príncipe, corrieron hacía el arbol',
-            next: 'ultimo',
+            next: 'bosque_correr',
             position: 0
         },
         {
             text: 'Avanzar abrazados',
             answer: 'Con mucho amor avanzaron despacito al arbol',
-            next: 'ultimo',
+            next: 'bosque_despacito',
             position: 0
         }
     ]

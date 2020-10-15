@@ -10,7 +10,7 @@ let texto = document.getElementById("texto");
 const CAMINOS = [inicio, explicacion, dormir_mas, desayuno, monte_platano, bosque_colibri, lago_gazaposo, 
     alucinacion_cactus, picnic_monte, gazapos_adultos, monte_platano2, monte_platano3, monte_platano_vuelta,
     lago_gazaposo2, juego_lago, picnic_lago, lago_sueño, juego_lago_arbol, bosque_hongos, bosque_exploracion_correcta, 
-    bosque_expliracion_incorrecta, c4]
+    bosque_expliracion_incorrecta, bosque_correr, bosque_despacito, ultimo]
 
 let caminoActual = null;
 let posicionActual = null;
