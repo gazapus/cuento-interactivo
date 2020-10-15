@@ -10,7 +10,7 @@ const inicio_sueño = {
             img: './src/images/1.jpg'
         },
         {
-            text: "Pero su sueño comenzó a ponerse difícil cuando de repente incursionó un ser que rompía con la armonía de su universo, era Maloso, el Señor de las Tinieblas que quería robarle sus llamas al sol pero Cascabel no se lo permitiría",
+            text: "Pero su sueño comenzó a ponerse difícil cuando de repente incursionó un ser que rompía con la armonía de su universo, era Maloso, el Señor de las Tinieblas que quería robarle sus llamas al sol para hacerse una parrillada pero Cascabel no se lo permitiría",
              img: './src/images/2.jpg'
         },
         {

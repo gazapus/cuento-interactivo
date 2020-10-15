@@ -2,7 +2,7 @@ const bosque_exploracion = {
     name: 'bosque_exploracion',
     content: [
         {
-            text: 'Se adentraron en la espesura del bosque buscando la palta tan deseada. Encontraron un camino de migajas de pan al que siguieron sin dudar, a una aventura tan bien guiada no se podían negar. Tras finalizar el camino, estaban frente a una pequeña casita, cubierta de chocolate y caramelos, con aroma de pastel que emanaba del interior, así que sin prisa ni razón ambos se la comieron ',
+            text: 'Se adentraron en la espesura del bosque buscando la palta tan deseada. Encontraron un camino de migajas de pan al que siguieron sin dudar, a una aventura tan bien guiada no se podían negar. Tras finalizar el camino, estaban frente a una pequeña casita, cubierta de chocolate y caramelos, con aroma de pastel que emanaba del interior, así que sin prisa ni razón ambos se la comieron.',
             img: './src/images/1.jpg'
         },
         {

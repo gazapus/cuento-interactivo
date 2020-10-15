@@ -6,15 +6,15 @@ const bosque_sabio = {
             img: './src/images/1.jpg'
         },
         {
-            text: ' - Tengan cuidado que salgo - comenzó diciendo el gran sabio - si han tocado mi puerta es que buscan que les rebele una verdad y la verdad es el resultado del reconocimiento de la realidad, la cual no es más que le expresión de la voluntad  por lo que el fruto de ésta ha de ser multiforme y cambiante, como aquella',
+            text: ' - Tengan cuidado que salgo - comenzó diciendo el gran sabio - si han tocado mi puerta es que buscan que les rebele una verdad y la verdad es el resultado del reconocimiento de la realidad, la cual no es más que le expresión de la voluntad  por lo que el fruto de ésta ha de ser multiforme y cambiante como aquella',
             img: './src/images/1.jpg'
         },
         {
-            text: ' - Permitame presentarnos - dijo Gazapo sacandose su sombrero a igual que Cascabel - hemos venido de muy lejos a buscar un gran tesoro, brilla como oro y de un saber inigualable, y usted como todo lo sabe me sabrá responder donde encontrar este tesoro en este bosque tan gigante.',
+            text: ' - Permitame presentarnos - dijo Gazapo sacandose su sombrero a igual que Cascabel - hemos venido de muy lejos a buscar un gran tesoro, brilla como oro y de un sabor inigualable, y usted como todo lo sabe me sabrá responder donde encontrar este tesoro en este bosque tan gigante.',
              img: './src/images/2.jpg'
         },
         {
-            text: ' - Les responderé sólo si pueden adivinar el acertijo que les presentaré, será un reto a sus mentes y marcarán precedente para su futuro intelectual como regidores de estas tierras.\n"Vengo de las tinieblas de la historia, me alejo galopando, mi ser es legendario, mi cabeza es de conejo aunque mi cuerpo es de conejo. ¿Qué soy?',
+            text: ' - Les responderé sólo si pueden adivinar el acertijo que les presentaré, será un reto a sus mentes y marcarán precedente para su futuro intelectual como regidores de estas tierras: "Vengo de las tinieblas de la historia y me alejo galopando, soy un ser legendario, mi cabeza es de conejo aunque mi cuerpo es de conejo. ¿Qué soy?',
             img: './src/images/2.jpg'
         }
     ],
@@ -22,13 +22,13 @@ const bosque_sabio = {
         {
             text: 'Conejo',
             answer: '"Respuesta equivocada"',
-            next: 'ultimo',
+            next: 'bosque_exploracion_incorrecta',
             position: 0
         },
         {
-            text: 'Almiraj',
+            text: 'Caballo',
             answer: '"Respuesta equivocada"',
-            next: 'ultimo',
+            next: 'bosque_exploracion_incorrecta',
             position: 0
         },
         {
