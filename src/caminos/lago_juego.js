@@ -2,7 +2,7 @@ const lago_juego = {
     name: 'lago_juego',
     content: [
         {
-            text: 'Picarona y de sorpresa la Princesa se aventó hacía el Principe y con sus manitas lo empujó hacía el lago. El Príncipe, como era buen nadador, arrimó su cabecita sobre el agua y rieron juntos del hecho sucedido',
+            text: 'Picarona y de sorpresa la Princesa se aventó hacía el Principe y con sus patitas lo empujó hacía el lago. El Príncipe ya en el agua, como era buen nadador, arrimó su cabecita sobre el agua y rieron juntos del hecho sucedido',
             img: './src/images/1.jpg'
         },
         {
@@ -10,7 +10,7 @@ const lago_juego = {
             img: './src/images/1.jpg'
         },
         {
-            text: 'Con su pelaje esponjoso ambos reposaron bajo el sol, comiendo plantitas de su alrededor empezaron a sentirse más vivitos, se llenaron de ganas de jugar y de continuar su viaje así que sacudiendo su pelaje se pusieron a pensar como iban a continuar este gazaposo viaje.',
+            text: 'Con su pelaje esponjoso reposaron bajo el sol, comiendo plantitas de su alrededor empezaron a sentirse más vivitos, se llenaron de ganas de jugar y de continuar su viaje así que sacudiendo su pelaje se pusieron a pensar como iban a continuar este gazaposo viaje.',
              img: './src/images/2.jpg'
         }
     ],
@@ -24,7 +24,7 @@ const lago_juego = {
         {
             text: 'Comamos primero',
             answer: '"¡Me encanta!"',
-            next: 'ultimo',
+            next: 'lago_picnic',
             position: 0
         },
     ]

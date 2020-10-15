@@ -18,7 +18,7 @@ const monte_platano3 = {
             img: './src/images/2.jpg'
         },
         {
-            text: 'Un brillo a sus ojitos la despertó en el amanecer, cuando la luz del sol se filtraba por su ventana. En un principío no indentificó muy bien el origen y sin más tardar dejó salir un chillido de alegría al ver junto a su planta de rosa-frutilla una brillosa plantita de paltas doradas, con algunos frutos que de inmediato se puso a saborear, dandose cuenta de aquella piedrita que había recogido resultó ser la semilla del arbol de paltas doradas',
+            text: 'Un brillo a sus ojitos la despertó en el amanecer, cuando la luz del sol se filtraba por su ventana. En un principío no indentificó muy bien el origen y sin más tardar dejó salir un chillido de alegría al ver junto a su planta de rosa-frutilla una brillosa plantita de paltas doradas, con algunos frutos que de inmediato se puso a saborear, dandose cuenta de aquella piedrita que había recogido resultó ser la semilla del arbol de paltas doradas.',
             img: './src/images/2.jpg'
         },
     ],

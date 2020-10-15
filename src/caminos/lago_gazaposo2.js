@@ -6,7 +6,7 @@ const lago_gazaposo2 = {
             img: './src/images/1.jpg'
         },
         {
-            text: 'Sin repensarlo ni aguardar se dijeron entre sí que ahí debe estar, y de inmediato se lanzaron a preparar un bote bien armado. La Princesa preparó la superficie y el Príncipe el timón, ella la vela y él la ancla. Así partieron rumbo a ese futuro prometedor.',
+            text: 'Sin repensarlo ni aguardar se dijeron entre sí que ahí debe estar, y de inmediato se lanzaron a preparar un bote bien equipado. La Princesa preparó la superficie y el Príncipe el timón, ella la vela y él la ancla. Así partieron rumbo a ese futuro prometedor.',
             img: './src/images/1.jpg'
         },
         {
@@ -14,7 +14,7 @@ const lago_gazaposo2 = {
              img: './src/images/2.jpg'
         },
         {
-            text: '" - No hay paltas doradas - dijo el Gazapo sonriendo - pero aún así sonrío por lo gratificante que ha resultado este camino. El caminar por sí solo es una acción de mis patas y el respirar este aire es un efecto olfativo y si bien los paisajes son bellos mis ojos no pueden retratarlos. Lo que realmente embellece este viaje y toda mi vida es su compañía, la que ilumina mis días y marca el límite entre el cielo y la tierra, es usted mi horizonte y mi estrella guía en esta vida"\n - ¿Qué le gustaría hacer ahora Princesa Cascabel?',
+            text: ' - No hay paltas doradas - dijo el Gazapo sonriendo - pero aún así sonrío por lo gratificante que ha resultado este camino. El caminar por sí solo es una acción de mis patas y el respirar este aire es un efecto olfativo y si bien los paisajes son bellos mis ojos no pueden retratarlos. Lo que realmente embellece este viaje y toda mi vida es su compañía, la que ilumina mis días y marca el límite entre el cielo y la tierra, es usted mi horizonte y mi estrella guía en esta vida"\n - ¿Qué le gustaría hacer ahora Princesa Cascabel?',
             img: './src/images/2.jpg'
         }
     ],
