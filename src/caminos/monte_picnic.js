@@ -6,11 +6,11 @@ const monte_picnic = {
             img: './src/images/1.jpg'
         },
         {
-            text: 'El Principe Gazapo tenía preparada su vianda que compartió dichoso con la Princesa. Se componía de una milanesa de zanahoria, acompañada con pizza conejil y té helado de limón. Compartieron y disfrutaron',
+            text: 'El Principe Gazapo tenía preparada su vianda que compartió dichoso con la Princesa. Se componía de una milanesa de zanahoria, acompañada con pizza conejil y té helado de limón. Compartieron, disfrutaron y vieron que fue bueno.',
             img: './src/images/1.jpg'
         },
         {
-            text: 'La vianda de la Princesa Cascabel estaba formada por una sopita de repe conejil, atún artificial de alverjas con arroz y un poco de café con queso de nueces. Se la compartió al Principe, se deleitaron juntos y disfrutaron\nUna vez terminada la comida se alistaron para seguir',
+            text: 'La vianda de la Princesa Cascabel estaba formada por una sopita de repe conejil, atún artificial de alverjas con arroz y un poco de café con queso de nueces. Se la compartió al Principe, se deleitaron juntos, disfrutaron y vieron que fue bueno.\nUna vez terminada la comida se alistaron para seguir',
             img: './src/images/2.jpg'
         }
     ],

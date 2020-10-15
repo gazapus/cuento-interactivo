@@ -2,7 +2,7 @@ const monte_platano_vuelta= {
     name: 'monte_platano_vuelta',
     content: [
         {
-            text: 'Mientras se proponían a bajar de la cima el colibrí se les acercó una vez más y les dijo "No desesperen, pues la palta dorada, como toda planta, necesita su tiempo de cultivo y una base solida donde crecer, sin más que decir, me despido".\n Los conejitos se despidieron cordialmente del colibrí y continuaron bajando',
+            text: 'Mientras se proponían a bajar de la cima el colibrí se les acercó una vez más y les dijo "No desesperen, pues la palta dorada, como toda planta, necesita su tiempo de cultivo y una base solida donde crecer alimentada por el más fuerte de los nutrientes de la vida, sin más que decir, me despido".\n Los conejitos se despidieron cordialmente del colibrí y continuaron bajando',
             img: './src/images/1.jpg'
         },
         {

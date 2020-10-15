@@ -10,7 +10,7 @@ const lago_sueño = {
             img: './src/images/1.jpg'
         },
         {
-            text: "Pero su sueño cambió de tono cuando de repente incursionó un ser que rompía con la armonía de su universo, era Maloso otra vez, el Señor de las Tinieblas que quería robarle el brillo a la Señora Luna, pero la gran Cascabel no se lo permitiría",
+            text: "Pero su sueño cambió de tono cuando de repente incursionó un ser que rompía con la armonía de su universo, era Maloso otra vez, el Señor de las Tinieblas que quería robarle el brillo a la Señora Luna para hacerse un velador, pero la gran Cascabel no se lo permitiría",
              img: './src/images/2.jpg'
         },
         {
