@@ -4,7 +4,6 @@ let contenedorCuento = document.getElementsByTagName("main")[0];
 let botonSiguiente = document.getElementById("siguiente_boton");
 let opcionesContenedor = document.getElementById("opciones_contenedor");
 let respuestaContenedor = document.getElementById("respuesta_contenedor");
-//let imagen = document.getElementById("imagen");
 let texto = document.getElementById("texto");
 let spinner = document.getElementById("modal")
 
@@ -155,26 +154,9 @@ function finalizar() {
     desvanecer(contenedorCuento, 1000, () => {
         contenedorCuento.style.display = "none";
         contenedorComenzar.style.display = "flex";
-        imagen.src = "./src/images/black.png";
+        document.getElementsByTagName("img")[0].src = "./src/images/black.png";
         texto.innerText = "";
         opcionesContenedor.innerHTML = "";
         aparecer(contenedorComenzar, 1000);
     });
 }
-
-/*
-
-    cargarCamino(){
-        mostrarSpinner()
-        imagenSiguiente = crearImagenSiguiente()
-        agregarListener(imagenSiguiente, () => eliminarSpinner, mostrar())
-    }
-
-    mostrar(){
-        eliminarImagenAnterior()
-        mostrarImagenCargada()
-        imagenSiguiente = crearImagenSiguiente()
-        agregarListener(imagenSiguiente, () => habilitarSiguiente())
-    }
-
-*/

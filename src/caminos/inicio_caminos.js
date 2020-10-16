@@ -3,11 +3,11 @@ const inicio_caminos = {
     content: [
         {
             text: 'El principe y la princesa se encaminaron a la plaza real, allí hicieron una pausa para jugar y seguir mariposas. Una vez cansados se recostaron cabeza a cabeza mirando las nubes y encontrando formas graciosas en ellas. El sol brillaba sobre ellos dandole su cálida bendición',
-            img: './src/images/1.jpg'
+            img: './src/images/ic1.jpg'
         },
         {
             text: 'Tras un corto descansito, ambos se levantaron de un brinco, como suelen hacer los conejitos cuando están traviesos. Mirando a su alrededor y contemplando la grandeza del Reino pensaron un momento y reflexionaron sobre que dirección tomar',
-            img: './src/images/1.jpg'
+            img: './src/images/ic2.jpg'
         },
         {
             text: `Concluyeron que había tres lugares posibles donde encontrar la palta dorada:
@@ -16,7 +16,7 @@ const inicio_caminos = {
              - Lago Gazaposo, un extenso lago donde los conejitos suelen ir a refrescarse, comer y donde se han encontrado muchos tesoros.
              ¿A donde ir?'
             `,
-             img: './src/images/2.jpg'
+             img: './src/images/ic3.jpg'
         }
     ],
     options: [
