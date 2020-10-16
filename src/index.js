@@ -37,15 +37,9 @@ botonSiguiente.addEventListener('click', () => {
     mostrar();
 })
 
-botonSiguiente.addEventListener('animationend', () => {
-    botonSiguiente.classList.remove("siguiente_boton_disabled");
-    botonSiguiente.disabled = false;
-})
+botonSiguiente.addEventListener('animationend', habiliarBotonSiguiente)
 
-botonSiguiente.addEventListener('animationstart', () => {
-    botonSiguiente.classList.add("siguiente_boton_disabled");
-    botonSiguiente.disabled = true;
-})
+botonSiguiente.addEventListener('animationstart', deshabilitarBotonSiguiente)
 
 function comenzar() {
     contenedorComenzar.style.display = "none";
@@ -53,48 +47,66 @@ function comenzar() {
     aparecer(contenedorCuento, 1000, () => cargarCamino('inicio', 0));
 }
 
+function cargarSiguienteImagen(imagenURL, callback) {
+    let previaImagen = document.getElementsByTagName("img")[0];
+    let siguienteImagen = document.createElement("img");
+    siguienteImagen.setAttribute("src", imagenURL);
+    siguienteImagen.classList.add("animate__animated", "animate__fadeIn", "invisible");
+    contenedorCuento.insertBefore(siguienteImagen, previaImagen);
+    document.getElementsByTagName("img")[0].addEventListener('load', callback)
+}
+
 function cargarCamino(nombre, posicion) {
-    let firstImage = document.getElementsByTagName("img")[0];
     modal.classList.remove("invisible");
     caminoActual = CAMINOS.find(camino => camino.name === nombre);
     posicionActual = posicion;
-    let imagenElemento = document.createElement("img");
-    imagenElemento.setAttribute("src", caminoActual.content[posicionActual].img);
-    imagenElemento.classList.add("animate__animated", "animate__fadeIn", "invisible");
-    contenedorCuento.insertBefore(imagenElemento, firstImage);
-
-    document.getElementsByTagName("img")[0].addEventListener('load', () => {
-        console.log("cargó")
+    cargarSiguienteImagen(caminoActual.content[posicionActual].img, () => {
         modal.classList.add("invisible");
         mostrar();
     })
 }
 
-function mostrar() {
+function eliminarImagenPrevia() {
     let previusImage = document.getElementsByTagName("img")[1];
     contenedorCuento.removeChild(previusImage);
+}
+
+function mostrarImagenActual() {
     let currentImage = document.getElementsByTagName("img")[0];
     currentImage.classList.remove("invisible");
     reaparecer(currentImage, 1000);
+}
+
+function mostrarTextoActual() {
     texto.innerText = caminoActual.content[posicionActual].text;
     texto.scrollTop = 0;
     aparecer(texto, 1000);
+}
 
-    if(haySiguiente()) {
-        botonSiguiente.disabled = true;
-        botonSiguiente.classList.add("siguiente_boton_disabled");
-        let iamgenSiguiente = document.createElement("img");
-        iamgenSiguiente.setAttribute("src", caminoActual.content[posicionActual + 1].img);
-        iamgenSiguiente.classList.add("animate__animated", "animate__fadeIn", "invisible");
-        contenedorCuento.insertBefore(iamgenSiguiente, currentImage);
-        document.getElementsByTagName("img")[0].addEventListener('load', () => {
-            console.log("cargó otra imagen")
-            botonSiguiente.style.display = 'block';
-            botonSiguiente.disabled = false;
-            botonSiguiente.classList.remove("siguiente_boton_disabled");
-        })
+function deshabilitarBotonSiguiente(){
+    botonSiguiente.disabled = true;
+    botonSiguiente.classList.add("siguiente_boton_disabled");
+}
+
+function habiliarBotonSiguiente() {
+    botonSiguiente.style.display = 'block';
+    botonSiguiente.disabled = false;
+    botonSiguiente.classList.remove("siguiente_boton_disabled");
+}
+
+function ocultarBotonSiguiente(){
+    botonSiguiente.style.display = 'none';
+}
+
+function mostrar() {
+    eliminarImagenPrevia();
+    mostrarImagenActual();
+    mostrarTextoActual();
+    if (haySiguiente()) {
+        deshabilitarBotonSiguiente();
+        cargarSiguienteImagen(caminoActual.content[posicionActual + 1].img, habiliarBotonSiguiente )    
     } else {
-        botonSiguiente.style.display = 'none';
+        ocultarBotonSiguiente();
         mostrarOpciones();
     }
 }
@@ -133,8 +145,8 @@ function seleccionarOpcion(e) {
 function ocultarOpciones(opcionElegida) {
     for (let opcion of opcionesContenedor.children) {
         if (opcion.innerText !== opcionElegida) {
-           opcion.classList.add('disabled');
-           opcion.disabled = true;
+            opcion.classList.add('disabled');
+            opcion.disabled = true;
         }
     }
 }
