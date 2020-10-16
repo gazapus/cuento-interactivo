@@ -81,6 +81,8 @@ function mostrar() {
     aparecer(texto, 1000);
 
     if(haySiguiente()) {
+        botonSiguiente.disabled = true;
+        botonSiguiente.classList.add("siguiente_boton_disabled");
         let iamgenSiguiente = document.createElement("img");
         iamgenSiguiente.setAttribute("src", caminoActual.content[posicionActual + 1].img);
         iamgenSiguiente.classList.add("animate__animated", "animate__fadeIn", "invisible");
@@ -88,6 +90,8 @@ function mostrar() {
         document.getElementsByTagName("img")[0].addEventListener('load', () => {
             console.log("cargó otra imagen")
             botonSiguiente.style.display = 'block';
+            botonSiguiente.disabled = false;
+            botonSiguiente.classList.remove("siguiente_boton_disabled");
         })
     } else {
         botonSiguiente.style.display = 'none';
