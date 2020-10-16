@@ -4,8 +4,9 @@ let contenedorCuento = document.getElementsByTagName("main")[0];
 let botonSiguiente = document.getElementById("siguiente_boton");
 let opcionesContenedor = document.getElementById("opciones_contenedor");
 let respuestaContenedor = document.getElementById("respuesta_contenedor");
-let imagen = document.getElementById("imagen");
+//let imagen = document.getElementById("imagen");
 let texto = document.getElementById("texto");
+let spinner = document.getElementById("modal")
 
 const CAMINOS = [
     inicio, inicio_caminos, inicio_desayuno, inicio_sueño,
@@ -53,30 +54,44 @@ function comenzar() {
 }
 
 function cargarCamino(nombre, posicion) {
+    let firstImage = document.getElementsByTagName("img")[0];
+    modal.classList.remove("invisible");
     caminoActual = CAMINOS.find(camino => camino.name === nombre);
     posicionActual = posicion;
-    mostrar();
+    let imagenElemento = document.createElement("img");
+    imagenElemento.setAttribute("src", caminoActual.content[posicionActual].img);
+    imagenElemento.classList.add("animate__animated", "animate__fadeIn", "invisible");
+    contenedorCuento.insertBefore(imagenElemento, firstImage);
+
+    document.getElementsByTagName("img")[0].addEventListener('load', () => {
+        console.log("cargó")
+        modal.classList.add("invisible");
+        mostrar();
+    })
 }
 
 function mostrar() {
-    let siguienteImagenURL = caminoActual.content[posicionActual].img;
-    if (caminoActual.content[posicionActual - 1]) { // verifica si la imagen cambia
-        if (siguienteImagenURL !== caminoActual.content[posicionActual - 1].img) {
-            imagen.src = siguienteImagenURL;
-            reaparecer(imagen, 1000);
-        }
-    } else {
-        imagen.src = siguienteImagenURL;
-        reaparecer(imagen, 1000);
-    }
+    let previusImage = document.getElementsByTagName("img")[1];
+    contenedorCuento.removeChild(previusImage);
+    let currentImage = document.getElementsByTagName("img")[0];
+    currentImage.classList.remove("invisible");
+    reaparecer(currentImage, 1000);
     texto.innerText = caminoActual.content[posicionActual].text;
     texto.scrollTop = 0;
     aparecer(texto, 1000);
-    if (!haySiguiente()) {
+
+    if(haySiguiente()) {
+        let iamgenSiguiente = document.createElement("img");
+        iamgenSiguiente.setAttribute("src", caminoActual.content[posicionActual + 1].img);
+        iamgenSiguiente.classList.add("animate__animated", "animate__fadeIn", "invisible");
+        contenedorCuento.insertBefore(iamgenSiguiente, currentImage);
+        document.getElementsByTagName("img")[0].addEventListener('load', () => {
+            console.log("cargó otra imagen")
+            botonSiguiente.style.display = 'block';
+        })
+    } else {
         botonSiguiente.style.display = 'none';
         mostrarOpciones();
-    } else {
-        botonSiguiente.style.display = 'block';
     }
 }
 
@@ -130,3 +145,20 @@ function finalizar() {
         aparecer(contenedorComenzar, 1000);
     });
 }
+
+/*
+
+    cargarCamino(){
+        mostrarSpinner()
+        imagenSiguiente = crearImagenSiguiente()
+        agregarListener(imagenSiguiente, () => eliminarSpinner, mostrar())
+    }
+
+    mostrar(){
+        eliminarImagenAnterior()
+        mostrarImagenCargada()
+        imagenSiguiente = crearImagenSiguiente()
+        agregarListener(imagenSiguiente, () => habilitarSiguiente())
+    }
+
+*/
