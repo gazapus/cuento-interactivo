@@ -3,11 +3,11 @@ const lago_gazaposo = {
     content: [
         {
             text: 'Los conejitos emprendieron el camino hacía el Lago Gazaposo. Correteaban y jugaban en el camino, comían algún que otro pastito y seguían su viaje. El Lago Gazaposo se encontraba colina abajo, por lo que cuando se encontraban ante un pasaje con mucho declive se tomaban de las patas y bajaban juntos corriendo. En la primera vez el Príncipe se tropezó pero luego ya aprendío de la Princesa y lo hizo bien.',
-            img: './src/images/1.jpg'
+            img: 'https://wow.zamimg.com/uploads/screenshots/normal/544451-corcho-muy-grande.jpg'
         },
         {
             text: 'Una vez en el lago, saltaron de un lado al otro alrededor de éste como imitando a los pecesitos saltarines que se encontraban en su interior\n - Juguemos una carrera alrededor del lago - dijo el Príncipe pero ni bien terminó de pronunciar esas palabras la Princesa salió corriendo como una liebre adelantandole posición. De inmediato el Príncipe corrió para alcanzarla.',
-            img: './src/images/1.jpg'
+            img: 'https://i.imgur.com/6fMoArE.jpg'
         },
         {
             text: 'No llegaron a bordear todo el lago cuando ya se encontraban lenguita afuera de tanto cansancio, era muy grande. Sentados en la orilla, con el viente acariciando sus rostros, se relajaban uno con el otro acurrucandose entre sí\nPasó el tiempo y un sonido de un pez chapoteando los despertó del estado de relajación al que habían llegado\n - Princesa mía - dijo el Príncipe parandose en la orilla del lago - debemos retomar nuestra misión y seguir buscando la Palta Dorada',
