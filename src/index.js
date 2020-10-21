@@ -127,6 +127,7 @@ function mostrarOpciones() {
 
 function seleccionarOpcion(e) {
     let textoOpcion = e.target.innerText;
+    e.target.disabled = true;
     ocultarOpciones(textoOpcion);
     let respuesta = caminoActual.options.find(opcion => opcion.text === textoOpcion);
     respuestaContenedor.innerHTML = `<p id="respuesta" class="animate__animated animate__bounceIn">${respuesta.answer}</p>`;
@@ -161,4 +162,3 @@ function finalizar() {
         aparecer(contenedorComenzar, 1000);
     });
 }
-
