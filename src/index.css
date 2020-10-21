@@ -221,7 +221,8 @@ img {
         width: 90%;
     }
     img {
-        width: 95%;
+        max-width: 95%;
+        width: auto;
         height: 35vh;
     }
     #texto {
