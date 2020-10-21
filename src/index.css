@@ -218,6 +218,9 @@ img {
 
 @media (max-width: 800px) {
     main {
+        background-color: #9e651e;
+    }
+    main {
         width: 90%;
     }
     img {
