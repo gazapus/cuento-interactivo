@@ -154,9 +154,11 @@ function finalizar() {
     desvanecer(contenedorCuento, 1000, () => {
         contenedorCuento.style.display = "none";
         contenedorComenzar.style.display = "flex";
+        respuestaContenedor.innerHTML = "";
         document.getElementsByTagName("img")[0].src = "./src/images/black.png";
         texto.innerText = "";
         opcionesContenedor.innerHTML = "";
         aparecer(contenedorComenzar, 1000);
     });
 }
+
