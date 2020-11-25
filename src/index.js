@@ -1,18 +1,20 @@
 let botonComenzar = document.getElementById("comenzar_boton");
+let botonEvento = document.getElementById("evento_boton");
 let contenedorComenzar = document.getElementById("comenzar_contenedor");
 let contenedorCuento = document.getElementsByTagName("main")[0];
 let botonSiguiente = document.getElementById("siguiente_boton");
 let opcionesContenedor = document.getElementById("opciones_contenedor");
 let respuestaContenedor = document.getElementById("respuesta_contenedor");
 let texto = document.getElementById("texto");
-let spinner = document.getElementById("modal")
+let spinner = document.getElementById("modal");
+var audio = document.getElementById("audio");
 
 const CAMINOS = [
     inicio, inicio_caminos, inicio_desayuno, inicio_sueño,
     monte_platano, monte_alucinacion, monte_picnic, monte_gazapos_adultos, monte_platano2, monte_platano3, monte_platano_vuelta,
     lago_gazaposo, lago_gazaposo2, lago_juego_arbol, lago_picnic, lago_juego, lago_sueño, lago_vuelta,
     bosque_colibri, bosque_exploracion, bosque_sabio, bosque_hongos, bosque_exploracion_correcta, bosque_exploracion_incorrecta, bosque_despacito, bosque_correr,
-    ultimo
+    ultimo, evento_cumple1, evento_cumple2a, evento_cumple2b, evento_cumple2c, evento_cumple3
 ]
 let caminoActual = null;
 let posicionActual = null;
@@ -21,6 +23,10 @@ window.onload = () => {
     botonComenzar.addEventListener("click", () => {
         desvanecer(contenedorComenzar, 1000, comenzar);
     });
+
+    botonEvento.addEventListener('click', () => {
+        desvanecer(contenedorComenzar, 1000, comenzarEvento);
+    })
 }
 
 botonComenzar.addEventListener('mouseover', () => {
@@ -40,6 +46,12 @@ botonSiguiente.addEventListener('animationend', habiliarBotonSiguiente)
 
 botonSiguiente.addEventListener('animationstart', deshabilitarBotonSiguiente)
 
+function comenzarEvento() {
+    contenedorComenzar.style.display = "none";
+    contenedorCuento.style.display = "flex";
+    aparecer(contenedorCuento, 1000, () => cargarCamino('evento_cumple1', 0));
+}
+
 function comenzar() {
     contenedorComenzar.style.display = "none";
     contenedorCuento.style.display = "flex";
@@ -56,6 +68,9 @@ function cargarSiguienteImagen(imagenURL, callback) {
 }
 
 function cargarCamino(nombre, posicion) {
+    if(nombre === 'evento_cumple3') {
+        audio.play();
+    }
     modal.classList.remove("invisible");
     caminoActual = CAMINOS.find(camino => camino.name === nombre);
     posicionActual = posicion;

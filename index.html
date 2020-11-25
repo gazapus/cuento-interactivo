@@ -2,27 +2,29 @@
 <html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Una aventura interactiva de la Princesa Cascabel" />
     <meta property="og:url" content="https://gazapus.vercel.app/" />
-    <meta property="og:description" content="Una aventura interactiva de la Princesa Cascabel"/>
+    <meta property="og:description" content="Una aventura interactiva de la Princesa Cascabel" />
     <meta property="og:title" content="Convergencia Gazaposa" />
     <meta property="og:site_name" content="Convergencia Gazaposa" />
-    <meta property="og:image" content="https://iili.io/3EgdOb.png"/>
-    <meta property="og:image:width" content="200px"/>
-    <meta property="og:type" content="game"/>
-    <link rel="icon" href="./src/images/palta-ico.png"/>
+    <meta property="og:image" content="https://iili.io/3EgdOb.png" />
+    <meta property="og:image:width" content="200px" />
+    <meta property="og:type" content="game" />
+    <link rel="icon" href="./src/images/palta-ico.png" />
     <link rel="stylesheet" href="./src/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&family=Varela+Round&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&family=Varela+Round&display=swap"
+        rel="stylesheet" />
     <title>Convergencia Gazaposa</title>
-    
+
 </head>
 
 <body>
     <div id="comenzar_contenedor">
-        <button id="comenzar_boton" class="animate__animated">Comenzar</button>
+        <button id="evento_boton" class="animate__animated evento_boton">Evento Especial</button>
+        <button id="comenzar_boton" class="animate__animated comenzar_boton">Comenzar</button>
     </div>
     <main>
         <img class="animate__animated animate__fadeIn" src="./src/images/black.png" alt="no cargó" />
@@ -31,11 +33,14 @@
             <button id="siguiente_boton" class="animate__animated animate__fadeInLeft">SIGUIENTE</button>
         </div>
         <div id="opciones_contenedor"></div>
-       <div id="respuesta_contenedor"></div>
+        <div id="respuesta_contenedor"></div>
     </main>
     <div id="modal" class="invisible">
         <div class="spinner"></div>
     </div>
+    <audio id="audio" controls>
+        <source type="audio/mp3" src="src/platano.mp3">
+    </audio>
     <!-- Inicio -->
     <script src="./src/caminos/inicio.js"></script>
     <script src="./src/caminos/inicio_caminos.js"></script>
@@ -68,6 +73,12 @@
     <script src="src/caminos/bosque_despacito.js"></script>
     <!-- Final -->
     <script src="./src/caminos/ultimo.js"></script>
+    <!-- Evento -->
+    <script src="./src/caminos/evento_cumple1.js"></script>
+    <script src="./src/caminos/evento_cumple2a.js"></script>
+    <script src="./src/caminos/evento_cumple2b.js"></script>
+    <script src="./src/caminos/evento_cumple2c.js"></script>
+    <script src="./src/caminos/evento_cumple3.js"></script>
     <!-- Scripts -->
     <script src="./src/utils.js"></script>
     <script src="./src/index.js"></script>
